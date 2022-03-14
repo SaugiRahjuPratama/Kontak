@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#C1AEB4"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/IVname"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVname"
+        android:id="@+id/MET1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/name"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/IVphone"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/IVname"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_phone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVphone"
+        android:layout_below="@id/MET1"
+        android:id="@+id/MET2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/phone"
+            android:textStyle="bold"
+            android:layout_width="160dp"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:paddingLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/MET2"
+        android:id="@+id/MET3"
+        android:layout_below="@id/MET1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableEnd="@drawable/ic_panah"
+            android:textStyle="bold"
+            android:hint="@string/area"
+            android:layout_width="160dp"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/IVaddres"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/IVphone"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_area" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVaddres"
+        android:layout_below="@id/MET2"
+        android:id="@+id/MET4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/address"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVaddres"
+        android:layout_below="@id/MET4"
+        android:id="@+id/MET5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/city"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVphone"
+        android:layout_below="@id/MET5"
+        android:id="@+id/MET6"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableEnd="@drawable/ic_panah"
+            android:textStyle="bold"
+            android:hint="@string/state"
+            android:layout_width="160dp"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:paddingLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/MET2"
+        android:id="@+id/MET7"
+        android:layout_below="@id/MET5"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/zip"
+            android:textStyle="bold"
+            android:layout_width="160dp"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/IVemail"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/MET6"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVaddres"
+        android:layout_below="@id/MET6"
+        android:id="@+id/MET8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/email"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/IVbirthday"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/MET8"
+        android:src="@drawable/ic_brithday"
+        android:layout_width="20dp"
+        android:layout_height="60dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/IVaddres"
+        android:layout_below="@id/MET8"
+        android:id="@+id/MET9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableEnd="@drawable/ic_calender"
+            android:textStyle="bold"
+            android:hint="@string/brithday"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
